@@ -1,0 +1,136 @@
+header {
+  background: #1976d2;
+}
+.navbar {
+  padding: 0 50px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.layout-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.contact-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.contact-left-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-left-top-title {
+  font-size: 32px;
+  font-weight: 500;
+}
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact-left-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-left-bottom-title {
+  color: #0052b4;
+  font-weight: 500;
+}
+.contact-left-bottom p {
+  line-height: 1.5;
+}
+.contact-social-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 18px;
+}
+.contact-right h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.form-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+textarea {
+  width: 100%;
+  height: 180px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.button-contact {
+  margin-left: auto;
+}
+.btn-send {
+  background: #0052b4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  header {
+    height: 100%;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .layout-contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact-left {
+    width: 100%;
+  }
+  .contact-right {
+    width: 100%;
+  }
+  .form-section {
+    display: flex;
+    flex-direction: column;
+  }
+}

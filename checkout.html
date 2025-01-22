@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-left">
+          <ul class="nav-links">
+            <div class="logo">
+              <img src="./images/logo.png" alt="logo" />
+            </div>
+            <li class="nav-link-item">
+              <a href="./about.html">Về chúng tôi</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="./productPage.html">Sản phẩm</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="./action.html">Hoạt động</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="./cart.html">Giỏ hàng</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-right">
+          <!-- fixsp nut search -->
+          <div class="search">
+            <i class="fas fa-search"> </i>
+            <input placeholder="Tìm kiếm" type="text" />
+          </div>
+          <ul class="nav-links">
+            <li class="nav-link-item">
+              <a href="./contact.html">Liên hệ</a>
+            </li>
+            <li class="nav-link-item">
+              <a href="">Đăng nhập</a>
+            </li>
+            <li class="nav-link-item">
+              <svg
+                width="31"
+                height="20"
+                viewBox="0 0 31 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1864_5424)">
+                  <path
+                    d="M17.3525 -0.000488281H13.6025V8.12447H0.477539V11.8745H13.6025V19.9994H17.3525V11.8745H30.4775V8.12447H17.3525V-0.000488281Z"
+                    fill="#D80027"
+                  />
+                  <path
+                    d="M23.5509 13.478L30.4775 17.3262V13.478H23.5509ZM18.7384 13.478L30.4775 19.9997V18.1556L22.058 13.478H18.7384ZM27.3506 19.9997L18.7384 15.2147V19.9997H27.3506Z"
+                    fill="#0052B4"
+                  />
+                  <path
+                    d="M18.7384 13.478L30.4775 19.9997V18.1556L22.058 13.478H18.7384Z"
+                    fill="#171717"
+                  />
+                  <path
+                    d="M18.7384 13.478L30.4775 19.9997V18.1556L22.058 13.478H18.7384Z"
+                    fill="#D80027"
+                  />
+                  <path
+                    d="M5.77096 13.478L0.477539 16.4188V13.478H5.77096ZM12.2167 14.3074V19.9998H1.97115L12.2167 14.3074Z"
+                    fill="#0052B4"
+                  />
+                  <path
+                    d="M8.89705 13.478L0.477539 18.1556V19.9997L12.2167 13.478H8.89705Z"
+                    fill="#D80027"
+                  />
+                  <path
+                    d="M7.4042 6.52123L0.477539 2.67303V6.52123H7.4042ZM12.2167 6.52123L0.477539 -0.000488281V1.84369L8.89705 6.52123H12.2167ZM3.60445 -0.000488281L12.2167 4.78451V-0.000488281H3.60445Z"
+                    fill="#0052B4"
+                  />
+                  <path
+                    d="M12.2167 6.52123L0.477539 -0.000488281V1.84369L8.89705 6.52123H12.2167Z"
+                    fill="#171717"
+                  />
+                  <path
+                    d="M12.2167 6.52123L0.477539 -0.000488281V1.84369L8.89705 6.52123H12.2167Z"
+                    fill="#D80027"
+                  />
+                  <path
+                    d="M25.1841 6.52178L30.4775 3.58096V6.52178H25.1841ZM18.7384 5.69244V0H28.9839L18.7384 5.69244Z"
+                    fill="#0052B4"
+                  />
+                  <path
+                    d="M22.058 6.52172L30.4775 1.84418V0L18.7384 6.52172H22.058Z"
+                    fill="#D80027"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1864_5424">
+                    <rect
+                      width="30"
+                      height="20"
+                      fill="white"
+                      transform="translate(0.477539)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </li>
+            <li class="nav-link-item">
+              <svg
+                width="31"
+                height="20"
+                viewBox="0 0 31 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1864_5441)">
+                  <path
+                    d="M12.0218 0H0.477539V20.0194H30.5356V0H12.0218Z"
+                    fill="#D80027"
+                  />
+                  <path
+                    d="M15.4775 4.21582L16.8054 8.30256H21.1025L17.6261 10.8283L18.954 14.9152L15.4775 12.3894L12.0011 14.9152L13.329 10.8283L9.85254 8.30256H14.1496L15.4775 4.21582Z"
+                    fill="#FFDA44"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1864_5441">
+                    <rect
+                      width="30"
+                      height="20"
+                      fill="white"
+                      transform="translate(0.477539)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- navbar mobile -->
+      <div class="navbar-mobile">
+        <div class="navbar-mobile-left">
+          <i class="fas fa-solid fa-bars menu-mobile-icon"></i>
+        </div>
+        <div class="navbar-mobile-right">
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Tìm kiếm" />
+          </div>
+          <div class="icons">
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.571655 0.714286C0.571655 0.524845 0.64691 0.343164 0.780865 0.20921C0.914819 0.075255 1.0965 0 1.28594 0H3.4288C3.58813 4.40164e-05 3.74287 0.0533581 3.86841 0.151464C3.99396 0.24957 4.0831 0.386834 4.12165 0.541429L4.70023 2.85714H21.2859C21.3944 2.85717 21.5015 2.88192 21.599 2.9295C21.6965 2.97709 21.7819 3.04626 21.8487 3.13177C21.9155 3.21728 21.9619 3.31688 21.9844 3.42301C22.007 3.52914 22.0051 3.63901 21.9788 3.74429L19.8359 12.3157C19.7974 12.4703 19.7082 12.6076 19.5827 12.7057C19.4572 12.8038 19.3024 12.8571 19.1431 12.8571H6.28594C6.12661 12.8571 5.97187 12.8038 5.84632 12.7057C5.72078 12.6076 5.63164 12.4703 5.59308 12.3157L2.87166 1.42857H1.28594C1.0965 1.42857 0.914819 1.35332 0.780865 1.21936C0.64691 1.08541 0.571655 0.903726 0.571655 0.714286ZM5.05737 4.28571L6.84308 11.4286H18.5859L20.3717 4.28571H5.05737ZM7.71451 15.7143C7.33563 15.7143 6.97227 15.8648 6.70436 16.1327C6.43645 16.4006 6.28594 16.764 6.28594 17.1429C6.28594 17.5217 6.43645 17.8851 6.70436 18.153C6.97227 18.4209 7.33563 18.5714 7.71451 18.5714C8.09339 18.5714 8.45676 18.4209 8.72466 18.153C8.99257 17.8851 9.14308 17.5217 9.14308 17.1429C9.14308 16.764 8.99257 16.4006 8.72466 16.1327C8.45676 15.8648 8.09339 15.7143 7.71451 15.7143ZM4.85737 17.1429C4.85737 16.3851 5.15839 15.6584 5.69421 15.1226C6.23003 14.5867 6.95675 14.2857 7.71451 14.2857C8.47227 14.2857 9.199 14.5867 9.73482 15.1226C10.2706 15.6584 10.5717 16.3851 10.5717 17.1429C10.5717 17.9006 10.2706 18.6273 9.73482 19.1632C9.199 19.699 8.47227 20 7.71451 20C6.95675 20 6.23003 19.699 5.69421 19.1632C5.15839 18.6273 4.85737 17.9006 4.85737 17.1429ZM17.7145 15.7143C17.3356 15.7143 16.9723 15.8648 16.7044 16.1327C16.4365 16.4006 16.2859 16.764 16.2859 17.1429C16.2859 17.5217 16.4365 17.8851 16.7044 18.153C16.9723 18.4209 17.3356 18.5714 17.7145 18.5714C18.0934 18.5714 18.4568 18.4209 18.7247 18.153C18.9926 17.8851 19.1431 17.5217 19.1431 17.1429C19.1431 16.764 18.9926 16.4006 18.7247 16.1327C18.4568 15.8648 18.0934 15.7143 17.7145 15.7143ZM14.8574 17.1429C14.8574 16.3851 15.1584 15.6584 15.6942 15.1226C16.23 14.5867 16.9568 14.2857 17.7145 14.2857C18.4723 14.2857 19.199 14.5867 19.7348 15.1226C20.2706 15.6584 20.5717 16.3851 20.5717 17.1429C20.5717 17.9006 20.2706 18.6273 19.7348 19.1632C19.199 19.699 18.4723 20 17.7145 20C16.9568 20 16.23 19.699 15.6942 19.1632C15.1584 18.6273 14.8574 17.9006 14.8574 17.1429Z"
+                fill="white"
+              />
+            </svg>
+
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1897_2057)">
+                <path
+                  d="M10 9C11.0609 9 12.0783 8.57857 12.8284 7.82843C13.5786 7.07828 14 6.06087 14 5C14 3.93913 13.5786 2.92172 12.8284 2.17157C12.0783 1.42143 11.0609 1 10 1C8.93913 1 7.92172 1.42143 7.17157 2.17157C6.42143 2.92172 6 3.93913 6 5C6 6.06087 6.42143 7.07828 7.17157 7.82843C7.92172 8.57857 8.93913 9 10 9Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.488 19C17.8687 17.2434 16.7197 15.7222 15.1994 14.6462C13.6792 13.5702 11.8625 12.9923 9.99996 12.9923C8.13742 12.9923 6.32075 13.5702 4.80048 14.6462C3.2802 15.7222 2.13122 17.2434 1.51196 19H18.488Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1897_2057">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- menu mobile -->
+      <div class="menu-mobile">
+        <div class="menu-mobile-header">
+          <h1>Danh mục</h1>
+          <span class="close">&times;</span>
+        </div>
+        <div class="menu-mobile-body">
+          <div class="menu-mobile-item">
+            <div><i class="fas fa-paint-brush"></i> Gốm sứ trang trí</div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="submenu-mobile">
+            <div class="submenu-mobile-item">
+              <a href="#">Vòng cổ</a>
+            </div>
+            <div class="submenu-mobile-item">
+              <a href="#">Nhẫn</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-mobile-footer">
+          <a href="#">Về chúng tôi</a>
+          <a href="#">Sản phẩm</a>
+          <a href="#">Hoạt động</a>
+          <a href="#">Liên hệ</a>
+          <a href="#">Tiếng việt</a>
+          <a href="#">English</a>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="breadcrumb">
+        <a href="#">TRANG CHỦ</a> &gt; <a href="#">SẢN PHẨM</a> &gt;
+        <a href="#">GỐM SỨ TRANG TRÍ</a>
+      </div>
+      <div class="layout-checkout">
+        <div>
+          <div id="checkoutForm" class="form-section">
+            <h2>Thông tin nhận hàng</h2>
+            <div class="form-group">
+              <label>Họ và tên</label>
+              <input type="text" placeholder="Nguyễn Văn An" />
+            </div>
+            <div class="form-group">
+              <label>Số điện thoại</label>
+              <input type="tel" placeholder="+84 946-2651" />
+            </div>
+            <div class="form-group">
+              <label>Địa chỉ Email</label>
+              <input type="email" placeholder="Nhập địa chỉ email" />
+              <div class="error-text">Vui lòng nhập địa chỉ email</div>
+            </div>
+            <div class="location-group">
+              <div class="form-group">
+                <label>Tỉnh/ Thành phố</label>
+                <select>
+                  <option>Chọn Tỉnh/ Thành phố</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Quận/ Huyện</label>
+                <select>
+                  <option>Chọn Quận/ Huyện</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Phường/ Xã</label>
+                <select>
+                  <option>Chọn Phường/ Xã</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Địa chỉ</label>
+              <input type="text" placeholder="Nhập số nhà, đường..." />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Ghi chú chung khi đặt hàng" />
+            </div>
+          </div>
+          <div class="form-code hidden" id="codForm">
+            <div class="form-code-head">
+              <div class="form-code-head-item">
+                <h3>Thông tin nhận hàng</h3>
+                <span>Thay đổi</span>
+              </div>
+              <div class="form-code-body">
+                <div class="form-code-body-name">
+                  <span>Nguyễn Việt An</span><span>+84 846 4653</span>
+                </div>
+                <span>vietan@gmail.com</span>
+                <span>Số 7, Xã Sơn Bình, Huyện Tam Đường, Lai Châu</span>
+              </div>
+            </div>
+            <div class="form-code-bottom">
+              <h3>Thanh toán khi nhận hàng</h3>
+              <p>
+                Vui lòng thanh toán bằng tiền mặt cho người vận chuyển khi đơn
+                hàng của bạn đã đến nơi.
+              </p>
+            </div>
+          </div>
+          <div class="form-success hidden" id="successForm">
+            <div class="form-success-head">
+              <h3>Đặt hàng thành công</h3>
+              <div class="form-success-body">
+                <span style="font-weight: 500"
+                  >Kiểm tra xác nhận đơn hàng qua hòm thư email
+                  biwdeh@gmail.com</span
+                >
+                <span>Đơn đặt hàng: C0797942</span>
+                <span>Ngày đặt hàng: 17/11/2024 - 10:00 PM</span>
+              </div>
+              <div style="color: #0052b4">
+                Dự kiến giao đến bạn vào 20/11/2024
+              </div>
+            </div>
+            <div>
+              <div class="form-code-head">
+                <div class="form-code-head-item">
+                  <h3>Thông tin nhận hàng</h3>
+                  <span>Thay đổi</span>
+                </div>
+                <div class="form-code-body">
+                  <div class="form-code-body-name">
+                    <span>Nguyễn Việt An</span><span>+84 846 4653</span>
+                  </div>
+                  <span>vietan@gmail.com</span>
+                  <span>Số 7, Xã Sơn Bình, Huyện Tam Đường, Lai Châu</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="shipping-note">
+            Thời gian giao hàng dự kiến: TP.HCM (Miền 2 ngày), các tỉnh miền Nam
+            khác: 3 ngày; Hà Nội: 3 ngày, các tỉnh miền Bắc khác: 4 ngày; các
+            tỉnh miền Trung: 4 ngày
+          </p>
+
+          <div class="payment-methods">
+            <h2>Hình thức thanh toán</h2>
+            <div class="payment-group">
+              <div class="payment-option">
+                <input
+                  type="radio"
+                  name="payment"
+                  id="cod"
+                  value="cod"
+                  checked
+                />
+                <label for="cod">Thanh toán khi nhận hàng</label>
+              </div>
+              <div id="cod-description" class="payment-description active">
+                Vui lòng thanh toán bằng tiền mặt cho người vận chuyển khi đơn
+                hàng của bạn đã đến nơi.
+              </div>
+
+              <div class="payment-option">
+                <input type="radio" name="payment" id="bank" value="bank" />
+                <label for="bank"
+                  >Thanh toán qua tài khoản ngân hàng BIDV</label
+                >
+              </div>
+              <div id="bank-description" class="payment-description">
+                Chuyển khoản qua tài khoản ngân hàng BIDV với nội dung là mã đơn
+                hàng của bạn.
+              </div>
+
+              <div class="payment-option">
+                <input type="radio" name="payment" id="visa" value="visa" />
+                <label for="visa">Thanh toán qua Visa</label>
+              </div>
+              <div id="visa-description" class="payment-description">
+                Thanh toán an toàn qua cổng thanh toán Visa với thẻ tín dụng/ghi
+                nợ quốc tế.
+              </div>
+            </div>
+          </div>
+          <div class="support-section">
+            <span class="support-section-title">Hỗ trợ</span>
+            <div class="support-list">
+              <div class="support-item">
+                <div class="support-item-header">
+                  <img src="./images/phone.svg" alt="" />
+                  <div class="support-item-header-content">
+                    <span>Số điện thoại tư vấn</span>
+                    <span>0902555613</span>
+                  </div>
+                </div>
+              </div>
+              <div class="support-item">
+                <div class="support-item-header">
+                  <img src="./images/union.svg" alt="" />
+                  <span>Chính sách đổi hàng và hoàn tiền</span>
+                </div>
+              </div>
+              <div class="support-item">
+                <div class="support-item-header">
+                  <img src="./images/item.svg" alt="" />
+                  <span>Chính sách vận chuyển</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-section">
+          <div class="cart-header">
+            <div>Sản phẩm</div>
+            <div style="text-align: center">Số lượng</div>
+            <div style="text-align: right">Thành tiền</div>
+          </div>
+          <div class="cart-items">
+            <div class="cart-item">
+              <div class="product-info">
+                <img
+                  src="https://images.unsplash.com/photo-1735597693189-9ba81b5bbc83?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Tượng thiên nga"
+                />
+                <div class="product-details">
+                  <h3>Tượng thiên nga</h3>
+                  <div class="product-info-details">
+                    <p>Loại: Màu Hồng</p>
+                    <p>120.000 đ</p>
+                  </div>
+                  <div class="product-info-note">
+                    <div class="note">Mua để làm quà tặng</div>
+                    <div class="note-2">
+                      <span>Khắc tên, chữ theo yêu cầu + 40,000VNĐ </span>
+                      <input type="text" value="Nguyễn Văn A" disabled />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quantity">1</div>
+              <div class="price">120.000 đ</div>
+            </div>
+            <div class="cart-item">
+              <div class="product-info">
+                <img
+                  src="https://images.unsplash.com/photo-1735597693189-9ba81b5bbc83?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Tượng thiên nga"
+                />
+                <div class="product-details">
+                  <h3>Tượng thiên nga</h3>
+                  <div class="product-info-details">
+                    <p>Loại: Màu Hồng</p>
+                    <p>120.000 đ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quantity">1</div>
+              <div class="price">120.000 đ</div>
+            </div>
+            <div class="cart-item">
+              <div class="product-info">
+                <img
+                  src="https://images.unsplash.com/photo-1735597693189-9ba81b5bbc83?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Tượng thiên nga"
+                />
+                <div class="product-details">
+                  <h3>Tượng thiên nga</h3>
+                  <div class="product-info-details">
+                    <p>Loại: Màu Hồng</p>
+                    <p>120.000 đ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quantity">1</div>
+              <div class="price">120.000 đ</div>
+            </div>
+          </div>
+
+          <div class="voucher-input">
+            <input type="text" placeholder="Nhập mã giảm giá" />
+            <button>ÁP DỤNG</button>
+          </div>
+
+          <div class="cart-summary">
+            <div class="summary-row">
+              <span>Tổng tiền hàng</span>
+              <span>976.000 đ</span>
+            </div>
+            <div class="summary-row">
+              <span>Tổng cộng Voucher giảm giá</span>
+              <span>30.000 đ</span>
+            </div>
+            <div class="summary-row">
+              <span>Phí vận chuyển</span>
+              <span>30.000 đ</span>
+            </div>
+            <div class="summary-row total">
+              <span>Tổng thanh toán</span>
+              <span class="summary-row-price">976.000 đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="buttons-ck">
+          <button class="btn btn-back">Quay Lại giỏ hàng</button>
+          <button id="btnPay" class="btn btn-primary">Thanh toán</button>
+          <button id="btnConfirmCOD" class="btn btn-primary hidden">
+            Xác nhận mua hàng
+          </button>
+          <button id="btn-continue" class="btn btn-primary hidden">
+            Tiếp tục mua sắm
+          </button>
+        </div>
+      </div>
+
+      <!-- bankform -->
+      <div class="form-bank hidden" id="bankForm">
+        <div class="form-bank-container">
+          <div class="form-bank-left">
+            <div class="form-bank-left-header">
+              <div class="form-bank-left-info">
+                <span>Quét mã QR</span>
+                <p>
+                  Để tránh nhầm lẫn, chúng tôi khuyến nghị bạn nên thanh toán
+                  bằng cách quét mã QR bên trên. Nếu bạn dùng điện thoại, có thể
+                  tải mã QR về và vào ứng dụng ngân hàng quét mã QR từ ảnh
+                  vừa tải.
+                </p>
+              </div>
+              <img src="./images/qr.png" alt="" />
+            </div>
+            <div class="button-qr">
+              <button class="btn btn-primary">Tải mã QR</button>
+            </div>
+          </div>
+          <div class="bank-info">
+            <h2>Thanh toán qua tài khoản ngân hàng</h2>
+            <div class="payment-input-group">
+              <label>Ngân hàng</label>
+              <input type="text" value="Ngân hàng BIDV" readonly />
+            </div>
+            <div class="payment-input-group">
+              <label
+                >Số tài khoản
+                <button class="copy-btn">
+                  <img src="./images/copy.svg" alt="" /></button
+              ></label>
+              <input type="text" value="5645 6454 4565 2566" readonly />
+            </div>
+            <div class="payment-input-group">
+              <label
+                >Tên chủ tài khoản
+                <button class="copy-btn">
+                  <img src="./images/copy.svg" alt="" /></button
+              ></label>
+              <input type="text" value="Công Ty DHC CERAMIC" readonly />
+            </div>
+            <div class="payment-input-group">
+              <label
+                >Số tiền
+                <button class="copy-btn">
+                  <img src="./images/copy.svg" alt="" /></button
+              ></label>
+              <input type="text" value="5000000" readonly />
+            </div>
+            <div class="payment-input-group">
+              <label
+                >Nội dung chuyển khoản
+                <button class="copy-btn">
+                  <img src="./images/copy.svg" alt="" /></button
+              ></label>
+              <input type="text" value="Nguyễn Văn A chuyển khoản" readonly />
+            </div>
+          </div>
+        </div>
+        <div class="button-bank-info">
+          <button class="btn btn-back">Quay Lại</button>
+          <button id="btnConfirmBank" class="btn btn-primary">
+            Xác nhận mua hàng
+          </button>
+        </div>
+      </div>
+      <!-- visaForm -->
+      <!-- Giao diện thanh toán qua VISA -->
+      <div id="visaForm" class="visa-payment hidden">
+        <div class="visa-payment-container">
+          <h2>Thanh toán qua thẻ VISA</h2>
+          <div class="payment-input-group">
+            <div class="visa-logo"><img src="./images/visa.svg" alt="" /></div>
+            <label>Tên chủ tài khoản</label>
+            <input type="text" placeholder="Nguyễn Văn A" />
+          </div>
+          <div class="payment-input-group">
+            <label>Số thẻ thanh toán</label>
+            <input type="text" placeholder="5645 6454 4565 2566" />
+          </div>
+          <div class="expiry-cvc-group">
+            <div class="payment-input-group">
+              <label>Ngày hết hạn</label>
+              <input type="text" placeholder="05/2027" />
+            </div>
+            <div class="payment-input-group">
+              <label>CVC</label>
+              <input type="text" placeholder="236" />
+            </div>
+          </div>
+          <div class="country-zip-group">
+            <div class="payment-input-group">
+              <label>Quốc Gia</label>
+              <select>
+                <option>Hoa Kỳ</option>
+              </select>
+            </div>
+            <div class="payment-input-group">
+              <label>ZIP</label>
+              <input type="text" placeholder="T3C 0ZJ" />
+            </div>
+          </div>
+        </div>
+        <div class="button-bank-info">
+          <button class="btn btn-back">Quay Lại</button>
+          <button id="btnConfirmVisa" class="btn btn-primary">
+            Xác nhận mua hàng
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    // Lắng nghe sự kiện thay đổi radio button
+    const paymentInputs = document.querySelectorAll('input[name="payment"]');
+    const descriptions = document.querySelectorAll(".payment-description");
+
+    paymentInputs.forEach((input) => {
+      input.addEventListener("change", (e) => {
+        // Ẩn tất cả các description
+        descriptions.forEach((desc) => {
+          desc.classList.remove("active");
+        });
+
+        // Hiện description tương ứng với radio button được chọn
+        const selectedDescription = document.getElementById(
+          `${e.target.value}-description`
+        );
+        if (selectedDescription) {
+          selectedDescription.classList.add("active");
+        }
+      });
+    });
+
+    const btnPay = document.getElementById("btnPay");
+    const btnConfirmCOD = document.querySelector("#btnConfirmCOD");
+    const btnConfirmBank = document.getElementById("btnConfirmBank");
+    const btnConfirmVisa = document.getElementById("btnConfirmVisa");
+    const btnContinue = document.getElementById("btn-continue");
+    const checkoutForm = document.getElementById("checkoutForm");
+    const paymentMethod = document.querySelector(".payment-methods");
+    const shippingNote = document.querySelector(".shipping-note");
+    const supportSection = document.querySelector(".support-section");
+    const layoutCheckout = document.querySelector(".layout-checkout");
+
+    const codForm = document.getElementById("codForm");
+    const bankForm = document.getElementById("bankForm");
+    const visaForm = document.getElementById("visaForm");
+    const successForm = document.getElementById("successForm");
+
+    const paymentMethods = document.querySelectorAll('input[name="payment"]');
+
+    btnPay.addEventListener("click", () => {
+      const selectedPayment = document.querySelector(
+        'input[name="payment"]:checked'
+      ).value;
+
+      // Hide all forms
+      codForm.classList.add("hidden");
+      bankForm.classList.add("hidden");
+      visaForm.classList.add("hidden");
+      successForm.classList.add("hidden");
+
+      // Show selected form
+      if (selectedPayment === "cod") {
+        codForm.classList.remove("hidden");
+        checkoutForm.classList.add("hidden");
+        paymentMethod.classList.add("hidden");
+        shippingNote.classList.add("hidden");
+        supportSection.classList.add("hidden");
+        btnPay.classList.add("hidden");
+        btnConfirmCOD.classList.remove("hidden");
+      } else if (selectedPayment === "bank") {
+        layoutCheckout.classList.add("hidden");
+        bankForm.classList.remove("hidden");
+      } else if (selectedPayment === "visa") {
+        layoutCheckout.classList.add("hidden");
+        visaForm.classList.remove("hidden");
+      }
+    });
+
+    btnConfirmCOD.addEventListener("click", () => {
+      codForm.classList.add("hidden");
+      btnConfirmCOD.textContent = "Tiếp tục mua hàng";
+      successForm.classList.remove("hidden");
+    });
+
+    btnConfirmBank.addEventListener("click", () => {
+      layoutCheckout.classList.remove("hidden");
+      bankForm.classList.add("hidden");
+      checkoutForm.classList.add("hidden");
+      paymentMethod.classList.add("hidden");
+      shippingNote.classList.add("hidden");
+      supportSection.classList.add("hidden");
+      successForm.classList.remove("hidden");
+      btnPay.classList.add("hidden");
+      btnConfirmCOD.classList.add("hidden");
+      btnContinue.classList.remove("hidden");
+    });
+
+    btnConfirmVisa.addEventListener("click", () => {
+      btnPay.classList.add("hidden");
+
+      layoutCheckout.classList.remove("hidden");
+      visaForm.classList.add("hidden");
+      checkoutForm.classList.add("hidden");
+      paymentMethod.classList.add("hidden");
+      shippingNote.classList.add("hidden");
+      supportSection.classList.add("hidden");
+      successForm.classList.remove("hidden");
+      btnConfirmCOD.classList.add("hidden");
+      btnContinue.classList.remove("hidden");
+    });
+  </script>
+</html>
